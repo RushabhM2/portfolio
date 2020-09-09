@@ -1,0 +1,16 @@
+{
+  "name": "rushabhm2",
+  "version": "1.0.0",
+  "description": "portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Rushabh Mehta",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
