@@ -5,22 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <link rel="stylesheet" href="css/style.css">
   <title>Rushabh Mehta &mdash; Fullstack Developer</title>
+  <script src="https://kit.fontawesome.com/3e6ba4bb78.js" crossorigin="anonymous"></script>
 </head>  
 <body class="container">
   <nav class="sidebar">
     <img src="assets/portrait.jpg">
     <ul>
-      <li>About me</li>
-      <li>Projects</li>
-      <li>CV</li>
-      <li>Contact</li>
+      <li class="nav-item">About me</li>
+      <li class="nav-item">Projects</li>
+      <li class="nav-item">CV</li>
+      <li class="nav-item">Contact</li>
+      <li class="icon"><i class="fab fa-linkedin-in"></i></li>
+      <li class="icon"><i class="fab fa-github"></i></li>
+      <li class="icon"><i class="fab fa-twitter"></i></li>
+      <li class="icon"><i class="fas fa-envelope"></i></li>
     </ul>
   </nav>
   <div class="content">
     <header class="header">
-      Rushabh Mehta
+      <h1 class="header__heading">Rushabh Mehta</h1>
+      <h3 class="header__subheading">Full Stack Developer</h3>
+      <div class="header__content">
+        <div class="header__content-item">Javascript</div>
+        <div class="header__content-item">React</div>
+        <div class="header__content-item">React Native</div>
+        <div class="header__content-item">Angular</div>
+        <div class="header__content-item">SASS</div>
+        <div class="header__content-item">NodeJS</div>
+        <div class="header__content-item">SQL</div>
+        <div class="header__content-item">NoSQL</div>
+      </div>
     </header>
     <div class="projects">
+      <h2>Projects</h2>
       <div class="project">
         Project 1
       </div>
@@ -32,14 +49,33 @@
       </div>
     </div class="project">
     <div class="cv">
-      Resume
+      <h2>Resume</h2>
+      <iframe src="assets/Rushabh_Mehta_CV.pdf" type="application/pdf" width="100%" height="1100px">This browser does not support PDFs. Please download the PDF to view it: Download PDF</iframe>
     </div>
     <div class="contact">
-      Contact form
+      <h2>Contact me</h2>
+      <form class="contact__form">
+        <label for="name">Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Joe Bloggs" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="lname" name="lastname" placeholder="name@email.co.uk" required>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="I'm writing to you because..." style="height:200px" required></textarea>
+
+        <button type="submit" value="Submit">Submit</button>
+      </form>
+      <div class="contact__details">
+        <p class="contact__detail">Feel free to text me at <span>+254 723 022 789</span></p>
+        <p class="contact__detail">Or you could email me directly at <span>rushabh.r.mehta@gmail.com</span></p>
+      </div>
     </div>
     <footer class="footer">
-      Footer
+      <p>This website was created by Rushabh Mehta</p>
     </footer>
   </div>
+  <div class="top"><i class="fas fa-chevron-up"></i></div>
+  <script type="text/javascript" src="profile.js"></script>
 </body>
 </html>
