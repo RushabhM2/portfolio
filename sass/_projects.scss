@@ -1,0 +1,62 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  border-top: $pri solid .2rem;
+
+  h2 {
+    margin: 3rem;
+    padding: 3rem;
+  }
+
+  .project__details {
+    padding: 2rem;
+
+    .project__title {
+      color: $text-dark;
+      font-size: 6rem;
+    }
+
+    .project__links i {
+      color: $sec;
+      font-size: 4rem;
+      padding: 2rem;
+
+      &:hover {
+        color: $ter;
+      }
+    }
+
+    .project__description {
+      color: $pri;
+      font-size: 2rem;
+      padding: .2rem;
+
+      a {
+        text-decoration: none;
+        color: $pri;
+
+        &:hover {
+          color: $sec;
+        }
+      }
+    }
+  }
+
+  .project__slider {
+    display: flex;
+    overflow-x: scroll;
+    background-color: $ter;
+
+    .project__img{
+      height: 70vh;
+      width: auto;
+      padding: 1rem;
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+}

@@ -4,13 +4,13 @@
       45deg,
       rgba($str1, .65), rgba($str1, .65) 30rem,
       rgba(#fff, 0.8) 30rem, rgba(#fff, 0.8) 30.1rem, 
-      rgba($str2, .65) 30rem, rgba($str2, .65) 60rem,
+      rgba($str2, .65) 30.1rem, rgba($str2, .65) 60rem,
       rgba(#fff, 0.8) 60rem, rgba(#fff, 0.8) 60.1rem, 
-      rgba($str3, .65) 60rem, rgba($str3, .65) 90rem,
+      rgba($str3, .65) 60.1rem, rgba($str3, .65) 90rem,
       rgba(#fff, 0.8) 90rem, rgba(#fff, 0.8) 90.1rem, 
-      rgba($str4, .65) 90rem, rgba($str4, .65) 120rem,
+      rgba($str4, .65) 90.1rem, rgba($str4, .65) 120rem,
       rgba(#fff, 0.8) 120rem, rgba(#fff, 0.8) 120.1rem, 
-      rgba($str5, .65) 120rem, rgba($str5, .65) 150rem,
+      rgba($str5, .65) 120.1rem, rgba($str5, .65) 150rem,
     ),
     url(../assets/home.jpg);
   background-size: cover;
@@ -33,16 +33,17 @@
   .header__content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     list-style-type: none;
     font-size: 2rem;
     width: 82%;
 
     .header__content-item {
-      background-color: $ter;
-      color: $text-dark;
+      background-color: $pri;
+      color: $text-light;
       padding: 1rem 2rem;
+      margin: 1rem;
       border-radius: 50rem;
     }
   }

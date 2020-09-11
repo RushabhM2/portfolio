@@ -11,18 +11,29 @@
   <nav class="sidebar">
     <img src="assets/portrait.jpg">
     <ul>
-      <li class="nav-item">About me</li>
-      <li class="nav-item">Projects</li>
-      <li class="nav-item">CV</li>
-      <li class="nav-item">Contact</li>
-      <li class="icon"><i class="fab fa-linkedin-in"></i></li>
-      <li class="icon"><i class="fab fa-github"></i></li>
-      <li class="icon"><i class="fab fa-twitter"></i></li>
-      <li class="icon"><i class="fas fa-envelope"></i></li>
+      <a href="#header"><li class="nav-item">About me</li></a>
+      <a href="#projects"><li class="nav-item">Projects</li>
+      <a href="#cv"><li class="nav-item">CV</li></a>
+      <a href="#contact"><li class="nav-item">Contact</li></a>
+      <li class="icon">
+        <a href="https://www.linkedin.com/in/rushabhm2/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+      <li class="icon">
+        <a href="https://github.com/RushabhM2" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      <li class="icon">
+        <a href="mailto:rushabh.r.mehta@gmail.com" target="_blank">
+          <i class="fas fa-envelope"></i>
+        </a> 
+      </li>
     </ul>
   </nav>
   <div class="content">
-    <header class="header">
+    <header id="header" class="header">
       <h1 class="header__heading">Rushabh Mehta</h1>
       <h3 class="header__subheading">Full Stack Developer</h3>
       <div class="header__content">
@@ -36,23 +47,102 @@
         <div class="header__content-item">NoSQL</div>
       </div>
     </header>
-    <div class="projects">
+    <div id="projects" class="projects">
       <h2>Projects</h2>
       <div class="project">
-        Project 1
+        <div class="project__details">
+          <h4 class="project__title">1. IndieClass</h4>
+          <div class="project__links">
+            <a href="https://github.com/chamley/indieclass" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://expo.io/@rushabhm2/coolapp" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            <a href="https://www.youtube.com/watch?v=tDdjR7kOj28&t=230s&ab_channel=RushabhMehta" target="_blank"></a><i class="fab fa-youtube"></i>
+          </div>
+          <p class="project__description">
+            IndieClass is a mobile app that allows independent instructors to set up classes, and allows users to find and sign up to these classes.
+          </p>
+          <p class="project__description">
+            The project is built on <strong>React Native</strong>, and uses <strong>Google OAuth</strong> and <strong>Google Places</strong> APIs to handle authentication and map based searches.
+          </p>
+          <p class="project__description">
+            This app was built by <a href="https://github.com/ParisQZhang" target="_blank"><em>Paris Zhang</em></a> and <a href="https://github.com/chamley" target="_blank"><em>Sebastian Chamley</em></a> and myself over 2 weeks.
+          </p>
+          <p class="project__description">
+            To try it out, download the <strong>Expo app</strong>, follow the link above and scan the QR code using the Expo app.
+          </p>
+          <p class="project__description">
+            <strong>Check out screenshots of the project below</strong>
+          </p>
+        </div>
+        <div class="project__slider">
+          <div class="project__img"><img src="assets/IndieClass/explore.jpg"></div>
+          <div class="project__img"><img src="assets/IndieClass/explore2.jpg"></div>
+          <div class="project__img"><img src="assets/IndieClass/explore3.jpg"></div>
+          <div class="project__img"><img src="assets/IndieClass/signin.jpg"></div>
+          <div class="project__img"><img src="assets/IndieClass/myclasses1.jpg"></div>
+          <div class="project__img"><img src="assets/IndieClass/myclasses2.jpg"></div>
+          <div class="project__img"><img src="assets/IndieClass/profile.jpg"></div>
+          <div class="project__img"><img src="assets/IndieClass/profile2.jpg"></div>
+          <div class="project__img"><img src="assets/IndieClass/profile3.jpg"></div>
+          <div class="project__img"><img src="assets/IndieClass/profile4.jpg"></div>
+          <div class="project__img"><img src="assets/IndieClass/payment.jpg"></div>
+        </div>
       </div>
       <div class="project">
-        Project 2
+        <div class="project__details">
+          <h4 class="project__title">2. Feedbackr</h4>
+          <div class="project__links">
+            <a href="https://github.com/RushabhM2/feedbackr" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://feedbackr-assessment.herokuapp.com/view-quizzes" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            <a href="https://www.youtube.com/watch?v=O4a6q-oyYYI&ab_channel=RushabhMehta" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+          <p class="project__description">
+            An open source project whose purpose was to make the creation and sharing of assignments easier in this online age. Teachers shouldn't need to spend time building quizzes one by one when they can simply be shared between teachers. The project was built on <strong>React</strong>, uses a <strong>NoSQL database</strong> hosted on <strong>MongoDB Atlas</strong> to store the quizzes and was styled using <strong>SASS</strong>.
+          </p>
+        </div>
+        <div class="project__slider">
+          <div class="project__img"><img src="assets/feedbackr/Create_a_Quiz.png"></div>
+          <div class="project__img"><img src="assets/feedbackr/Doing_a_Quiz.png"></div>
+          <div class="project__img"><img src="assets/feedbackr/View_Quiz.png"></div>
+        </div>
       </div>
       <div class="project">
-        Project 3
+        <div class="project__details">
+          <h4 class="project__title">3. DreamTrip</h4>
+          <div class="project__links">
+            <a href="https://github.com/RushabhM2/Dream-Trip" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+          <p class="project__description">
+            A webapp made to help create vacation itineraries. I worked on the testing and final features. The screenshots below show the final product.
+          </p>
+        </div>
+        <div class="project__slider">
+          <div class="project__img"><img src="assets/dreamTrip/Drag_and_drop.gif"></div>
+          <div class="project__img"><img src="assets/dreamTrip/email.png"></div>
+        </div>
       </div>
-    </div class="project">
-    <div class="cv">
+      <div class="project">
+        <div class="project__details">
+          <h4 class="project__title">4. BlackJack</h4>
+          <div class="project__links">
+            <a href="https://github.com/RushabhM2/blackjack" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://blackjack-11.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <p class="project__description">
+            A simple game of BlackJack (without betting or splits) that I built to learn the basics of web development. The logic of letting the Ace be either a 1 or 11, and the logic of a BlackJack over a standard 21 is functional in this iteration.
+          </p>
+        </div>
+        <div class="project__slider">
+          <div class="project__img"><img src="assets/blackjack/blackjack1.png"></div>
+          <div class="project__img"><img src="assets/blackjack/blackjack2.png"></div>
+          <div class="project__img"><img src="assets/blackjack/blackjack3.png"></div>
+        </div>
+      </div>
+    </div>
+    <div id="cv" class="cv">
       <h2>Resume</h2>
       <iframe src="assets/Rushabh_Mehta_CV.pdf" type="application/pdf" width="100%" height="1100px">This browser does not support PDFs. Please download the PDF to view it: Download PDF</iframe>
     </div>
-    <div class="contact">
+    <div id="contact" class="contact">
       <h2>Contact me</h2>
       <form class="contact__form">
         <label for="name">Name</label>
@@ -62,7 +152,7 @@
         <input type="email" id="lname" name="lastname" placeholder="name@email.co.uk" required>
 
         <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="I'm writing to you because..." style="height:200px" required></textarea>
+        <textarea style="resize:none" id="subject" name="subject" placeholder="I'm writing to you because..." style="height:200px" required resize:none></textarea>
 
         <button type="submit" value="Submit">Submit</button>
       </form>
@@ -75,7 +165,7 @@
       <p>This website was created by Rushabh Mehta</p>
     </footer>
   </div>
-  <div class="top"><i class="fas fa-chevron-up"></i></div>
+  <a class="top" href="#header"><i class="fas fa-chevron-up"></i></a>
   <script type="text/javascript" src="profile.js"></script>
 </body>
 </html>

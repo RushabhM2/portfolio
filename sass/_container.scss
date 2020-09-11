@@ -16,25 +16,25 @@ body {
 .content {
   grid-column: full-start / full-end;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 
   .header {
     height: 90vh;
   }
 
   .projects {
-    height: 85vh;
-    padding: 3rem;
     text-align: center;
   }
 
   .cv {
-    padding: 3rem;
     text-align: center;
+
+    iframe {
+      padding: 3rem;
+    }
   }
 
   .contact {
-    height: 90vh;
-    padding: 3rem;
     text-align: center;
   }
 
