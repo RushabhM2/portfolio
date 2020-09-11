@@ -11,10 +11,12 @@ body {
 
 .sidebar {
   grid-column: sidebar-start / sidebar-end;
+  grid-area: sidebar;
 }
 
 .content {
   grid-column: full-start / full-end;
+  grid-area: content;
   overflow-y: scroll;
   scroll-behavior: smooth;
 
@@ -30,7 +32,9 @@ body {
     text-align: center;
 
     iframe {
+      width: 100%;
       padding: 3rem;
+      height: 1100px;
     }
   }
 
@@ -41,4 +45,24 @@ body {
   .footer {
     height: 10vh;
   }
+}
+
+@media only screen and (max-width:600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content;
+    grid-template-areas:
+      "sidebar"
+      "content";
+    overflow-y: scroll;
+  }
+
+  .cv iframe {
+    height: 400px;
+  }
+
+  // .top {
+  //   position: absolute;
+  // }
 }
