@@ -18,8 +18,9 @@ h1 {
 
 h2 {
     font-size: 7rem;
-    padding: 3rem;
-    background-color: $sec;;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
 }
 
 h3 {
@@ -38,6 +39,11 @@ h3 {
     text-align: center;
     line-height: 5rem;
     font-size: 2.5rem;
+    -webkit-transition: all 0.3s ease; 
+    -moz-transition: all 0.3s ease; 
+    -o-transition: all 0.3s ease; 
+    -ms-transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 
     &:hover {
         background-color: $ter;
@@ -45,6 +51,19 @@ h3 {
     }
 
     &:visited, &:active, &:focus{
+        background-color: $sec;
         color: $text-dark;
+        transition: all 0.3s;
     }
+}
+
+@media only screen and (max-width:600px) {
+  .top {
+    height: 4rem;
+    width: 4rem;
+    bottom: 1rem;
+    right: 1rem;
+    line-height: 4rem;
+    font-size: 2rem;
+  }
 }

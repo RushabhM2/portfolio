@@ -4,6 +4,7 @@
   "description": "portfolio website",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "npm-run-all compile:sass prefix:css compress:css",
     "watch:sass": "node-sass sass/main.scss css/style.css -w"
@@ -11,6 +12,7 @@
   "author": "Rushabh Mehta",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
     "node-sass": "^4.14.1"
   }
 }

@@ -1,20 +1,13 @@
 .header {
   background-image: 
-    linear-gradient(
+  linear-gradient(
       45deg,
-      rgba($str1, .65), rgba($str1, .65) 30rem,
-      rgba(#fff, 0.8) 30rem, rgba(#fff, 0.8) 30.1rem, 
-      rgba($str2, .65) 30.1rem, rgba($str2, .65) 60rem,
-      rgba(#fff, 0.8) 60rem, rgba(#fff, 0.8) 60.1rem, 
-      rgba($str3, .65) 60.1rem, rgba($str3, .65) 90rem,
-      rgba(#fff, 0.8) 90rem, rgba(#fff, 0.8) 90.1rem, 
-      rgba($str4, .65) 90.1rem, rgba($str4, .65) 120rem,
-      rgba(#fff, 0.8) 120rem, rgba(#fff, 0.8) 120.1rem, 
-      rgba($str5, .65) 120.1rem, rgba($str5, .65) 150rem,
-    ),
-    url(../assets/home.jpg);
-  background-size: cover;
-  background-position: center;
+      rgba($str1, .65), rgba($str1, .65) 20%,
+      rgba($str2, .65) 20%, rgba($str2, .65) 40%,
+      rgba($str3, .65) 40%, rgba($str3, .65) 60%, 
+      rgba($str4, .65) 60%, rgba($str4, .65) 80%,
+      rgba($str5, .65) 80%, rgba($str5, .65) 100%
+  );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,27 +16,63 @@
   .header__heading {
     text-align: center;
     color: #fff;
-    padding: 1rem;
+
+    animation-name: left-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
   }
 
   .header__subheading {
     text-align: center;
     color: #fff;
-    padding: 1rem;
+
+    animation-name: right-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+
+  .header__container {
+    margin: 2rem 4rem;
+    animation-name: bottom-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+
+  .header__text {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: rgba($ter, 0.8);
+    border: .1rem solid $pri;
+    font-size: 2rem;
+    text-align: center;
+    color: $text-dark;
+    margin-bottom: 2rem;
   }
 
   .header__content {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     list-style-type: none;
     font-size: 2rem;
-    width: 82%;
+    border: .1rem solid $pri;
+    border-radius: 1rem;
+
+    p {
+      padding: 1rem;
+      color: #fff;
+      width: 100%;
+      text-align: center;
+      background-color: rgba($pri, 0.8);
+      border-radius: 1rem 1rem 0 0;
+    }
 
     .header__content-item {
       background-color: $pri;
-      color: $text-light;
+      color: #fff;
       padding: 1rem 2rem;
       margin: 1rem;
       border-radius: 50rem;
