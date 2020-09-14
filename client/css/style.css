@@ -55,7 +55,16 @@ h3 {
     bottom: 1rem;
     right: 1rem;
     line-height: 4rem;
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  h1 {
+    font-size: 8rem; }
+  h2 {
+    font-size: 5rem;
+    padding: 2rem;
+    text-align: center;
+    width: 100%; }
+  h3 {
+    font-size: 3rem; } }
 
 body {
   overflow: hidden; }
@@ -534,10 +543,7 @@ body {
   .popup__right {
     width: 95%; } }
 
-.cv iframe {
-  max-width: 900px;
-  width: 70%;
-  padding: 3rem;
-  height: auto;
-  max-height: 1100px;
-  border: none; }
+@media only screen and (max-width: 600px) {
+  object {
+    width: 400px;
+    height: 400px; } }
